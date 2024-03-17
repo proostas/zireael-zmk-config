@@ -374,14 +374,28 @@
         
         combos {
             compatible = "zmk,combos";
-            combo_rus {
+            combo_force_rus {
+                timeout-ms = <50>;
+                key-positions = <5 6>;
+                layers = <RUS>;
+                bindings = <&kp U_TO_RUS_SCUT>;
+                require-prior-idle-ms = <300>;
+            };
+            combo_force_eng {
+                timeout-ms = <50>;
+                key-positions = <5 6>;
+                layers = <ENG>;
+                bindings = <&kp U_TO_ENG_SCUT>;
+                require-prior-idle-ms = <300>;
+            };
+            combo_switch_to_rus {
                 timeout-ms = <50>;
                 key-positions = <38 39>;
                 layers = <ENG>;
                 bindings = <&to_russian>;
                 require-prior-idle-ms = <300>;
             };
-            combo_eng {
+            combo_switch_to_eng {
                 timeout-ms = <50>;
                 key-positions = <38 39>;
                 layers = <RUS>;
