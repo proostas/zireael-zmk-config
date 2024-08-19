@@ -803,6 +803,18 @@
                 bindings = <&to_english>;
                 require-prior-idle-ms = <U_COMBO_STREAK_DECAY>;
             };
+            combo_key_repeat {
+                timeout-ms = <U_COMBO_TIMEOUT>;
+                key-positions = <17 18>;
+                bindings = <&key_repeat>;
+                require-prior-idle-ms = <U_COMBO_STREAK_DECAY>;
+            };
+            combo_caps_word {
+                timeout-ms = <U_COMBO_TIMEOUT>;
+                key-positions = <16 19>;
+                bindings = <&caps_word>;
+                require-prior-idle-ms = <U_COMBO_STREAK_DECAY>;
+            };
         };
 
         keymap {
