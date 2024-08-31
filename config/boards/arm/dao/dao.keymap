@@ -176,9 +176,9 @@
                            <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>,
                            <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>, <&kp RIGHT_PARENTHESIS>;
                 antecedents = <S E U P Y
-                               PLUS MINUS EXCLAMATION ASTERISK SLASH LESS_THAN GREATER_THAN PIPE PERCENT CARET AMPERSAND
+                               PLUS MINUS EXCLAMATION ASTERISK SLASH COMMA DOT PIPE PERCENT CARET AMPERSAND
                                LEFT_BRACKET LEFT_BRACE LEFT_PARENTHESIS>;
-                max-delay-ms = <250>;
+                max-delay-ms = <1000>;
             };
             
             // English layer
