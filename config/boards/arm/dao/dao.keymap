@@ -167,6 +167,16 @@
                 bindings = <&mo>, <&kp>;
             };
             
+            altrep: alternative_repeat {
+                compatible = "zmk,behavior-antecedent-morph";
+                label = "ALTERNATIVE_REPEAT";
+                #binding-cells = <0>;
+                defaults = <&none>;
+                bindings = <&kp C>, <&kp COMMA>, <&kp E>, <&kp E>, <&kp T>, <&kp DOT>;
+                antecedents = <S E U P Y>;
+                max-delay-ms = <250>;
+            };
+            
             // English layer
             collp: colemak_lpar {
                 compatible = "zmk,behavior-mod-morph";
@@ -822,16 +832,16 @@
 
                 english_layer {
 // ╭───────┬───────┬───────┬───────┬───────┬───────╮     ╭───────┬───────┬───────┬───────┬───────┬───────╮
-// |   [   |   Q   |   W   |   F   |   P   |   B   |     |   J   |   L   |   U   |   Y   |   "   |   ]   |
-// |  (/;  |   A   |   R   |   S   |   T   |   G   |     |   M   |   N   |   E   |   I   |   O   |  )/:  |
-// |   `   |   Z   |   X   |   C   |   D   |   V   |     |   K   |   H   |   ,   |   .   |   /   |   \   |
+// |  ALT1 |   Q   |   W   |   F   |   P   |   B   |     |   J   |   L   |   U   |   Y   |   "   |  ALT2 |
+// |  LDR  |   A   |   R   |   S   |   T   |   G   |     |   M   |   N   |   E   |   I   |   O   | ALTRT |
+// |  ALT3 |   Z   |   X   |   C   |   D   |   V   |     |   K   |   H   |   ,   |   .   |   /   |  ALT4 |
 // ╰───────┴───────┴───────┼───────┼───────┼───────┤     ├───────┼───────┼───────┼───────────────────────╯
 //                         |  MED  |  BKSP |  RET  |     |  TAB  | SPACE |  FUN  |
 //                         ╰───────┴───────┴───────╯     ╰───────┴───────┴───────╯
                         bindings = <
-          &kp LBKT  &kp Q         &kp W         &kp F         &kp P             &kp B         &kp J         &kp L            &kp U         &kp Y        &kp SQT       &kp RBKT       
-          &collp    &lmt LGUI A   &lmt LALT R   &lsht LSHFT S &lmt LCTRL T      &kp G         &kp M         &rmt RCTRL N     &rsht RSHFT E &rmt RALT I  &rmt RGUI O   &colrp
-          &kp GRAVE &kp Z         &kp X         &kp C         &kp D             &kp V         &kp K         &kp H            &kp COMMA     &kp DOT      &kp FSLH      &kp BSLH
+          &none     &kp Q         &kp W         &kp F         &kp P             &kp B         &kp J         &kp L            &kp U         &kp Y        &kp SQT       &none       
+          &none     &lmt LGUI A   &lmt LALT R   &lsht LSHFT S &lmt LCTRL T      &kp G         &kp M         &rmt RCTRL N     &rsht RSHFT E &rmt RALT I  &rmt RGUI O   &altrep
+          &none     &kp Z         &kp X         &kp C         &kp D             &kp V         &kp K         &kp H            &kp COMMA     &kp DOT      &kp FSLH      &none
                                             &lt MED DEL   &lt ENN BSPC   &mlt MOS RET   &lt SYE TAB   &lt NUE SPACE  &lt FUN ESC
                         >;
                 };
@@ -883,8 +893,8 @@
                 russian_layer {
 // ╭───────┬───────┬───────┬───────┬───────┬───────╮     ╭───────┬───────┬───────┬───────┬───────┬───────╮
 // |   Ё   |   Ц   |  ь/ъ  |   Я   |  ,/?  |  ./!  |     |   З   |   В   |   К   |   Д   |   Ч   |   Ш   |
-// |  Ь/Ъ  |   У   |   И   |   Е   |   О   |   А   |     |   Л   |   Н   |   Т   |   С   |   Р   |   Й   |
-// |   \   |   Ф   |   Э   |   Х   |   Ы   |   Ю   |     |   Б   |   М   |   П   |   Г   |   Ж   |   Щ   |
+// |   \   |   У   |   И   |   Е   |   О   |   А   |     |   Л   |   Н   |   Т   |   С   |   Р   |   Й   |
+// |  Ь/Ъ  |   Ф   |   Э   |   Х   |   Ы   |   Ю   |     |   Б   |   М   |   П   |   Г   |   Ж   |   Щ   |
 // ╰───────┴───────┴───────┼───────┼───────┼───────┤     ├───────┼───────┼───────┼───────────────────────╯
 //                         |  MED  |  BKSP |  RET  |     |  TAB  | SPACE |  FUN  |
 //                         ╰───────┴───────┴───────╯     ╰───────┴───────┴───────╯
