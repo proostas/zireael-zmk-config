@@ -172,8 +172,12 @@
                 label = "ALTERNATIVE_REPEAT";
                 #binding-cells = <0>;
                 defaults = <&none>;
-                bindings = <&kp C>, <&kp COMMA>, <&kp E>, <&kp E>, <&kp T>, <&kp DOT>;
-                antecedents = <S E U P Y>;
+                bindings = <&kp C>, <&kp COMMA>, <&kp E>, <&kp T>, <&kp DOT>,
+                           <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>, <&kp EQUAL>,
+                           <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>, <&kp RIGHT_PARENTHESIS>;
+                antecedents = <S E U P Y
+                               PLUS MINUS EXCLAMATION ASTERISK SLASH LESS_THAN GREATER_THAN PIPE PERCENT CARET AMPERSAND
+                               LEFT_BRACKET LEFT_BRACE LEFT_PARENTHESIS>;
                 max-delay-ms = <250>;
             };
             
