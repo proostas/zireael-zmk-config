@@ -180,6 +180,42 @@
                                LEFT_BRACKET LEFT_BRACE LEFT_PARENTHESIS>;
                 max-delay-ms = <1000>;
             };
+            alt1: alternative_1 {
+                compatible = "zmk,behavior-antecedent-morph";
+                label = "ALTERNATIVE_1";
+                #binding-cells = <0>;
+                defaults = <&none>;
+                bindings = <&alt_class>;
+                antecedents = <C>;
+                max-delay-ms = <1000>;
+            };
+            alt2: alternative_2 {
+                compatible = "zmk,behavior-antecedent-morph";
+                label = "ALTERNATIVE_2";
+                #binding-cells = <0>;
+                defaults = <&none>;
+                bindings = <&alt_case>;
+                antecedents = <C>;
+                max-delay-ms = <1000>;
+            };
+            alt3: alternative_3 {
+                compatible = "zmk,behavior-antecedent-morph";
+                label = "ALTERNATIVE_3";
+                #binding-cells = <0>;
+                defaults = <&none>;
+                bindings = <&alt_continue>;
+                antecedents = <C>;
+                max-delay-ms = <1000>;
+            };
+            alt4: alternative_4 {
+                compatible = "zmk,behavior-antecedent-morph";
+                label = "ALTERNATIVE_4";
+                #binding-cells = <0>;
+                defaults = <&none>;
+                bindings = <&alt_const>;
+                antecedents = <C>;
+                max-delay-ms = <1000>;
+            };
             
             // English layer
             collp: colemak_lpar {
@@ -785,6 +821,27 @@
                     , <&bt BT_SEL MACRO_PLACEHOLDER>
                     ;
             };
+            
+            ZMK_MACRO(alt_class,
+                wait-ms = <20>;
+                tap-ms = <5>;
+                bindings = <&kp L &kp A &kp S &kp S &kp SPACE>;
+            )
+            ZMK_MACRO(alt_case,
+                wait-ms = <20>;
+                tap-ms = <5>;
+                bindings = <&kp A &kp S &kp E &kp SPACE>;
+            )
+            ZMK_MACRO(alt_continue,
+                wait-ms = <20>;
+                tap-ms = <5>;
+                bindings = <&kp O &kp N &kp T &kp I &kp N &kp U &kp E &kp SEMI>;
+            )
+            ZMK_MACRO(alt_const,
+                wait-ms = <20>;
+                tap-ms = <5>;
+                bindings = <&kp O &kp N &kp S &kp T>;
+            )
         };
         
         combos {
@@ -843,9 +900,9 @@
 //                         |  MED  |  BKSP |  RET  |     |  TAB  | SPACE |  FUN  |
 //                         ╰───────┴───────┴───────╯     ╰───────┴───────┴───────╯
                         bindings = <
-          &none     &kp Q         &kp W         &kp F         &kp P             &kp B         &kp J         &kp L            &kp U         &kp Y        &kp SQT       &none       
+          &alt1     &kp Q         &kp W         &kp F         &kp P             &kp B         &kp J         &kp L            &kp U         &kp Y        &kp SQT       &alt2       
           &none     &lmt LGUI A   &lmt LALT R   &lsht LSHFT S &lmt LCTRL T      &kp G         &kp M         &rmt RCTRL N     &rsht RSHFT E &rmt RALT I  &rmt RGUI O   &altrep
-          &none     &kp Z         &kp X         &kp C         &kp D             &kp V         &kp K         &kp H            &kp COMMA     &kp DOT      &kp FSLH      &none
+          &alt3     &kp Z         &kp X         &kp C         &kp D             &kp V         &kp K         &kp H            &kp COMMA     &kp DOT      &kp FSLH      &alt4
                                             &lt MED DEL   &lt ENN BSPC   &mlt MOS RET   &lt SYE TAB   &lt NUE SPACE  &lt FUN ESC
                         >;
                 };
