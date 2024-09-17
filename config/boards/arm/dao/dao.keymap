@@ -793,14 +793,14 @@
             combo_force_eng {
                 timeout-ms = <U_COMBO_TIMEOUT>;
                 key-positions = <5 6>;
-                layers = <ENG>;
+                layers = <ENG EPP>;
                 bindings = <&kp U_TO_ENG_SCUT>;
                 require-prior-idle-ms = <U_COMBO_STREAK_DECAY>;
             };
             combo_switch_to_rus {
                 timeout-ms = <U_COMBO_TIMEOUT>;
                 key-positions = <38 39>;
-                layers = <ENG>;
+                layers = <ENG EPP>;
                 bindings = <&to_russian>;
                 require-prior-idle-ms = <U_COMBO_STREAK_DECAY>;
             };
@@ -814,14 +814,14 @@
             combo_key_repeat {
                 timeout-ms = <U_COMBO_TIMEOUT>;
                 key-positions = <17 18>;
-                layers = <ENG RUS>;
+                layers = <ENG EPP RUS>;
                 bindings = <&key_repeat>;
                 require-prior-idle-ms = <U_COMBO_STREAK_DECAY>;
             };
             combo_caps_word {
                 timeout-ms = <U_COMBO_TIMEOUT>;
                 key-positions = <16 19>;
-                layers = <ENG RUS>;
+                layers = <ENG EPP RUS>;
                 bindings = <&caps_word>;
                 require-prior-idle-ms = <U_COMBO_STREAK_DECAY>;
             };
@@ -862,15 +862,15 @@
                 };
                 english_nav_layer {
 // ╭───────┬───────┬───────┬───────┬───────┬───────╮     ╭───────┬───────┬───────┬───────┬───────┬───────╮
-// | CMAKE |  ESC  | CAPS  |  RUS  |       |       |     | PG_UP | HOME  |  UP   |  END  |  INS  |  AMNE |
-// |  CPP  |  LGUI | LALT  | LSHFT | LCTRL |  BTN  |     | PG_DN | LEFT  | DOWN  | RIGHT |  DEL  |   AME |
+// |       |  ESC  | CAPS  |  RUS  |       |       |     | PG_UP | HOME  |  UP   |  END  |  INS  |  AMNE |
+// |       |  LGUI | LALT  | LSHFT | LCTRL |  BTN  |     | PG_DN | LEFT  | DOWN  | RIGHT |  DEL  |   AME |
 // |       |       |       |       |       |       |     |       | CWORD | MENU  |       |       |  AMSE |
 // ╰───────┴───────┴───────┼───────┼───────┼───────┤     ├───────┼───────┼───────┼───────────────────────╯
 //                         |       |  (0)  |       |     |  TAB  | SPACE |       |
 //                         ╰───────┴───────┴───────╯     ╰───────┴───────┴───────╯
                         bindings = <
           &none     &kp ESC       &kp CAPS      &to_russian   &tog RUS          &none         &kp PG_UP     &kp HOME         &kp UP        &kp END      &kp INS       &amennavne
-          &tog EPP  &kp LGUI      &kp LALT      &kp LSHFT     &kp LCTRL         &tog BTN      &kp PG_DN     &kp LEFT         &kp DOWN      &kp RIGHT    &kp DEL       &amennave
+          &none     &kp LGUI      &kp LALT      &kp LSHFT     &kp LCTRL         &tog BTN      &kp PG_DN     &kp LEFT         &kp DOWN      &kp RIGHT    &kp DEL       &amennave
           &none     &none         &none         &none         &none             &none         &none         &caps_word       &kp K_CMENU   &none        &none         &amennavse
                                             &none     &none          &none         &kp TAB       &kp SPACE       &none
                         >;
@@ -999,14 +999,14 @@
                 media_layer {
 // ╭───────┬───────┬───────┬───────┬───────┬───────╮     ╭───────┬───────┬───────┬───────┬───────┬───────╮
 // |       |       |       |       |       |       |     | STOP  |  P/P  | VOL+  |       |       |  AMNE |
-// |       |       |       |       |       |       |     |       |   <<  | VOL-  |  >>   | LOCK  |   AME |
+// |       |       |       | CMAKE |  CPP  |       |     |       |   <<  | VOL-  |  >>   | LOCK  |   AME |
 // |       |       |       |       |       |       |     |       |       | MUTE  |       |       |  AMSE |
 // ╰───────┴───────┴───────┼───────┼───────┼───────┤     ├───────┼───────┼───────┼───────────────────────╯
 //                         |  (0)  |       |       |     |       | KRPT  |       |
 //                         ╰───────┴───────┴───────╯     ╰───────┴───────┴───────╯
                         bindings = <
           &none         &none         &none       &none     &none     &none     &kp C_STOP  &kp C_PP    &kp C_VOL_UP   &none       &none         &amenmedne
-          &none         &none         &none       &none     &none     &none     &none       &kp C_PREV  &kp C_VOL_DN   &kp C_NEXT  &kp C_AL_LOCK &amenmede
+          &none         &none         &none       &none     &tog EPP  &none     &none       &kp C_PREV  &kp C_VOL_DN   &kp C_NEXT  &kp C_AL_LOCK &amenmede
           &none         &none         &none       &none     &none     &none     &none       &none       &kp C_MUTE     &none       &none         &amenmedse
                                              &trans        &none         &trans         &trans      &key_repeat   &none
                         >;
