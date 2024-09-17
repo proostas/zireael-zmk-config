@@ -275,14 +275,6 @@
             // (q)uorum
             bindings = <&kp U &kp O &kp R &kp U &kp M>;
         };
-        amen_query: amen_query {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (q)uery
-            bindings = <&kp U &kp E &kp R &kp Y>;
-        };
         amen_qualitatively: amen_qualitatively {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -306,6 +298,14 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // (q)uid pro quo
             bindings = <&kp U &kp I &kp D &kp SPACE &kp P &kp R &kp O &kp SPACE &kp Q &kp U &kp O>;
+        };
+        amen_query: amen_query {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (q)uery
+            bindings = <&kp U &kp E &kp R &kp Y>;
         };
         amen_questionable: amen_questionable {
             compatible = "zmk,behavior-macro";
@@ -379,38 +379,6 @@
             // (w)hole
             bindings = <&kp H &kp O &kp L &kp E>;
         };
-        amen_worthwhile: amen_worthwhile {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (w)orthwhile
-            bindings = <&kp O &kp R &kp T &kp H &kp W &kp H &kp I &kp L &kp E>;
-        };
-        amen_what_is_more: amen_what_is_more {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (w)hat is more
-            bindings = <&kp H &kp A &kp T &kp SPACE &kp I &kp S &kp SPACE &kp M &kp O &kp R &kp E>;
-        };
-        amen_worth_it: amen_worth_it {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (w)orth it
-            bindings = <&kp O &kp R &kp T &kp H &kp SPACE &kp I &kp T>;
-        };
-        amen_with_hindsight: amen_with_hindsight {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (w)ith hindsight
-            bindings = <&kp I &kp T &kp H &kp SPACE &kp H &kp I &kp N &kp D &kp S &kp I &kp G &kp H &kp T>;
-        };
         amen_whereas: amen_whereas {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -434,6 +402,38 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // (w)here
             bindings = <&kp H &kp E &kp R &kp E>;
+        };
+        amen_with_hindsight: amen_with_hindsight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (w)ith hindsight
+            bindings = <&kp I &kp T &kp H &kp SPACE &kp H &kp I &kp N &kp D &kp S &kp I &kp G &kp H &kp T>;
+        };
+        amen_worthwhile: amen_worthwhile {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (w)orthwhile
+            bindings = <&kp O &kp R &kp T &kp H &kp W &kp H &kp I &kp L &kp E>;
+        };
+        amen_what_is_more: amen_what_is_more {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (w)hat is more
+            bindings = <&kp H &kp A &kp T &kp SPACE &kp I &kp S &kp SPACE &kp M &kp O &kp R &kp E>;
+        };
+        amen_worth_it: amen_worth_it {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (w)orth it
+            bindings = <&kp O &kp R &kp T &kp H &kp SPACE &kp I &kp T>;
         };
         amen_with_the_except: amen_with_the_except {
             compatible = "zmk,behavior-macro";
@@ -523,29 +523,29 @@
             // (f)undamentally
             bindings = <&kp U &kp N &kp D &kp A &kp M &kp E &kp N &kp T &kp A &kp L &kp L &kp Y>;
         };
-        amen_forthcoming: amen_forthcoming {
+        amen_frequently: amen_frequently {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (f)orthcoming
-            bindings = <&kp O &kp R &kp T &kp H &kp C &kp O &kp M &kp I &kp N &kp G>;
+            // (f)requently
+            bindings = <&kp R &kp E &kp Q &kp U &kp E &kp N &kp T &kp L &kp Y>;
         };
-        amen_for_some_time: amen_for_some_time {
+        amen_finally: amen_finally {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (f)or some time
-            bindings = <&kp O &kp R &kp SPACE &kp S &kp O &kp M &kp E &kp SPACE &kp T &kp I &kp M &kp E>;
+            // (f)inally
+            bindings = <&kp I &kp N &kp A &kp L &kp L &kp Y>;
         };
-        amen_first_and_forem: amen_first_and_forem {
+        amen_for_sure: amen_for_sure {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (f)irst and foremost
-            bindings = <&kp I &kp R &kp S &kp T &kp SPACE &kp A &kp N &kp D &kp SPACE &kp F &kp O &kp R &kp E &kp M &kp O &kp S &kp T>;
+            // (f)or sure
+            bindings = <&kp O &kp R &kp SPACE &kp S &kp U &kp R &kp E>;
         };
         amen_for_this_reason: amen_for_this_reason {
             compatible = "zmk,behavior-macro";
@@ -595,29 +595,29 @@
             // (f)ebruary
             bindings = <&kp E &kp B &kp R &kp U &kp A &kp R &kp Y>;
         };
-        amen_frequently: amen_frequently {
+        amen_forthcoming: amen_forthcoming {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (f)requently
-            bindings = <&kp R &kp E &kp Q &kp U &kp E &kp N &kp T &kp L &kp Y>;
+            // (f)orthcoming
+            bindings = <&kp O &kp R &kp T &kp H &kp C &kp O &kp M &kp I &kp N &kp G>;
         };
-        amen_finally: amen_finally {
+        amen_for_some_time: amen_for_some_time {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (f)inally
-            bindings = <&kp I &kp N &kp A &kp L &kp L &kp Y>;
+            // (f)or some time
+            bindings = <&kp O &kp R &kp SPACE &kp S &kp O &kp M &kp E &kp SPACE &kp T &kp I &kp M &kp E>;
         };
-        amen_for_sure: amen_for_sure {
+        amen_first_and_forem: amen_first_and_forem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (f)or sure
-            bindings = <&kp O &kp R &kp SPACE &kp S &kp U &kp R &kp E>;
+            // (f)irst and foremost
+            bindings = <&kp I &kp R &kp S &kp T &kp SPACE &kp A &kp N &kp D &kp SPACE &kp F &kp O &kp R &kp E &kp M &kp O &kp S &kp T>;
         };
         amen_for_the_most_pa: amen_for_the_most_pa {
             compatible = "zmk,behavior-macro";
@@ -707,29 +707,29 @@
             // (p)articularly
             bindings = <&kp A &kp R &kp T &kp I &kp C &kp U &kp L &kp A &kp R &kp L &kp Y>;
         };
-        amen_personally_id_s: amen_personally_id_s {
+        amen_presumably: amen_presumably {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (p)ersonally, I’d say
-            bindings = <&kp E &kp R &kp S &kp O &kp N &kp A &kp L &kp L &kp Y &kp COMMA &kp SPACE &kp LS(I) &kp APOS &kp D &kp SPACE &kp S &kp A &kp Y>;
+            // (p)resumably
+            bindings = <&kp R &kp E &kp S &kp U &kp M &kp A &kp B &kp L &kp Y>;
         };
-        amen_personally_spea: amen_personally_spea {
+        amen_perhaps: amen_perhaps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (p)ersonally speaking
-            bindings = <&kp E &kp R &kp S &kp O &kp N &kp A &kp L &kp L &kp Y &kp SPACE &kp S &kp P &kp E &kp A &kp K &kp I &kp N &kp G>;
+            // (p)erhaps
+            bindings = <&kp E &kp R &kp H &kp A &kp P &kp S>;
         };
-        amen_prepare: amen_prepare {
+        amen_popular: amen_popular {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (p)repare
-            bindings = <&kp R &kp E &kp P &kp A &kp R &kp E>;
+            // (p)opular
+            bindings = <&kp O &kp P &kp U &kp L &kp A &kp R>;
         };
         amen_performance: amen_performance {
             compatible = "zmk,behavior-macro";
@@ -779,29 +779,29 @@
             // (p)rovided that
             bindings = <&kp R &kp O &kp V &kp I &kp D &kp E &kp D &kp SPACE &kp T &kp H &kp A &kp T>;
         };
-        amen_presumably: amen_presumably {
+        amen_personally_id_s: amen_personally_id_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (p)resumably
-            bindings = <&kp R &kp E &kp S &kp U &kp M &kp A &kp B &kp L &kp Y>;
+            // (p)ersonally, I’d say
+            bindings = <&kp E &kp R &kp S &kp O &kp N &kp A &kp L &kp L &kp Y &kp COMMA &kp SPACE &kp LS(I) &kp APOS &kp D &kp SPACE &kp S &kp A &kp Y>;
         };
-        amen_perhaps: amen_perhaps {
+        amen_personally_spea: amen_personally_spea {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (p)erhaps
-            bindings = <&kp E &kp R &kp H &kp A &kp P &kp S>;
+            // (p)ersonally speaking
+            bindings = <&kp E &kp R &kp S &kp O &kp N &kp A &kp L &kp L &kp Y &kp SPACE &kp S &kp P &kp E &kp A &kp K &kp I &kp N &kp G>;
         };
-        amen_popular: amen_popular {
+        amen_prepare: amen_prepare {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (p)opular
-            bindings = <&kp O &kp P &kp U &kp L &kp A &kp R>;
+            // (p)repare
+            bindings = <&kp R &kp E &kp P &kp A &kp R &kp E>;
         };
         amen_people: amen_people {
             compatible = "zmk,behavior-macro";
@@ -891,29 +891,29 @@
             // (b)eyond
             bindings = <&kp E &kp Y &kp O &kp N &kp D>;
         };
-        amen_by_any_means: amen_by_any_means {
+        amen_by_chance: amen_by_chance {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (b)y any means
-            bindings = <&kp Y &kp SPACE &kp A &kp N &kp Y &kp SPACE &kp M &kp E &kp A &kp N &kp S>;
+            // (b)y chance
+            bindings = <&kp Y &kp SPACE &kp C &kp H &kp A &kp N &kp C &kp E>;
         };
-        amen_by_any_chance: amen_by_any_chance {
+        amen_by_the_way: amen_by_the_way {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (b)y any chance
-            bindings = <&kp Y &kp SPACE &kp A &kp N &kp Y &kp SPACE &kp C &kp H &kp A &kp N &kp C &kp E>;
+            // (b)y the way
+            bindings = <&kp Y &kp SPACE &kp T &kp H &kp E &kp SPACE &kp W &kp A &kp Y>;
         };
-        amen_but_even_so: amen_but_even_so {
+        amen_besides: amen_besides {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (b)ut even so
-            bindings = <&kp U &kp T &kp SPACE &kp E &kp V &kp E &kp N &kp SPACE &kp S &kp O>;
+            // (b)esides
+            bindings = <&kp E &kp S &kp I &kp D &kp E &kp S>;
         };
         amen_business: amen_business {
             compatible = "zmk,behavior-macro";
@@ -963,29 +963,29 @@
             // (b)y the end of
             bindings = <&kp Y &kp SPACE &kp T &kp H &kp E &kp SPACE &kp E &kp N &kp D &kp SPACE &kp O &kp F>;
         };
-        amen_by_chance: amen_by_chance {
+        amen_by_any_means: amen_by_any_means {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (b)y chance
-            bindings = <&kp Y &kp SPACE &kp C &kp H &kp A &kp N &kp C &kp E>;
+            // (b)y any means
+            bindings = <&kp Y &kp SPACE &kp A &kp N &kp Y &kp SPACE &kp M &kp E &kp A &kp N &kp S>;
         };
-        amen_by_the_way: amen_by_the_way {
+        amen_by_any_chance: amen_by_any_chance {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (b)y the way
-            bindings = <&kp Y &kp SPACE &kp T &kp H &kp E &kp SPACE &kp W &kp A &kp Y>;
+            // (b)y any chance
+            bindings = <&kp Y &kp SPACE &kp A &kp N &kp Y &kp SPACE &kp C &kp H &kp A &kp N &kp C &kp E>;
         };
-        amen_besides: amen_besides {
+        amen_but_even_so: amen_but_even_so {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (b)esides
-            bindings = <&kp E &kp S &kp I &kp D &kp E &kp S>;
+            // (b)ut even so
+            bindings = <&kp U &kp T &kp SPACE &kp E &kp V &kp E &kp N &kp SPACE &kp S &kp O>;
         };
         amen_broadly_speakin: amen_broadly_speakin {
             compatible = "zmk,behavior-macro";
@@ -1067,6 +1067,22 @@
             // (j)ust a moment
             bindings = <&kp U &kp S &kp T &kp SPACE &kp A &kp SPACE &kp M &kp O &kp M &kp E &kp N &kp T>;
         };
+        amen_jokingly: amen_jokingly {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (j)okingly
+            bindings = <&kp O &kp K &kp I &kp N &kp G &kp L &kp Y>;
+        };
+        amen_january: amen_january {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (j)anuary
+            bindings = <&kp A &kp N &kp U &kp A &kp R &kp Y>;
+        };
         amen_juicy_gossip: amen_juicy_gossip {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1082,22 +1098,6 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // (j)aw-dropping
             bindings = <&kp A &kp W &kp MINUS &kp D &kp R &kp O &kp P &kp P &kp I &kp N &kp G>;
-        };
-        amen_january: amen_january {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (j)anuary
-            bindings = <&kp A &kp N &kp U &kp A &kp R &kp Y>;
-        };
-        amen_jokingly: amen_jokingly {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (j)okingly
-            bindings = <&kp O &kp K &kp I &kp N &kp G &kp L &kp Y>;
         };
         amen_jugular: amen_jugular {
             compatible = "zmk,behavior-macro";
@@ -1179,29 +1179,29 @@
             // (l)ast straw
             bindings = <&kp A &kp S &kp T &kp SPACE &kp S &kp T &kp R &kp A &kp W>;
         };
-        amen_let_alone: amen_let_alone {
+        amen_less_than: amen_less_than {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (l)et alone
-            bindings = <&kp E &kp T &kp SPACE &kp A &kp L &kp O &kp N &kp E>;
+            // (l)ess than
+            bindings = <&kp E &kp S &kp S &kp SPACE &kp T &kp H &kp A &kp N>;
         };
-        amen_last_but_not_le: amen_last_but_not_le {
+        amen_literally: amen_literally {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (l)ast but not least 
-            bindings = <&kp A &kp S &kp T &kp SPACE &kp B &kp U &kp T &kp SPACE &kp N &kp O &kp T &kp SPACE &kp L &kp E &kp A &kp S &kp T &kp SPACE>;
+            // (l)iterally
+            bindings = <&kp I &kp T &kp E &kp R &kp A &kp L &kp L &kp Y>;
         };
-        amen_laboriously: amen_laboriously {
+        amen_lengthy: amen_lengthy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (l)aboriously
-            bindings = <&kp A &kp B &kp O &kp R &kp I &kp O &kp U &kp S &kp L &kp Y>;
+            // (l)engthy
+            bindings = <&kp E &kp N &kp G &kp T &kp H &kp Y>;
         };
         amen_learned: amen_learned {
             compatible = "zmk,behavior-macro";
@@ -1251,29 +1251,29 @@
             // (l)iberally
             bindings = <&kp I &kp B &kp E &kp R &kp A &kp L &kp L &kp Y>;
         };
-        amen_less_than: amen_less_than {
+        amen_let_alone: amen_let_alone {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (l)ess than
-            bindings = <&kp E &kp S &kp S &kp SPACE &kp T &kp H &kp A &kp N>;
+            // (l)et alone
+            bindings = <&kp E &kp T &kp SPACE &kp A &kp L &kp O &kp N &kp E>;
         };
-        amen_literally: amen_literally {
+        amen_last_but_not_le: amen_last_but_not_le {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (l)iterally
-            bindings = <&kp I &kp T &kp E &kp R &kp A &kp L &kp L &kp Y>;
+            // (l)ast but not least 
+            bindings = <&kp A &kp S &kp T &kp SPACE &kp B &kp U &kp T &kp SPACE &kp N &kp O &kp T &kp SPACE &kp L &kp E &kp A &kp S &kp T &kp SPACE>;
         };
-        amen_lengthy: amen_lengthy {
+        amen_laboriously: amen_laboriously {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (l)engthy
-            bindings = <&kp E &kp N &kp G &kp T &kp H &kp Y>;
+            // (l)aboriously
+            bindings = <&kp A &kp B &kp O &kp R &kp I &kp O &kp U &kp S &kp L &kp Y>;
         };
         amen_leading: amen_leading {
             compatible = "zmk,behavior-macro";
@@ -1355,6 +1355,38 @@
             // (u)nheard-of
             bindings = <&kp N &kp H &kp E &kp A &kp R &kp D &kp MINUS &kp O &kp F>;
         };
+        amen_unless: amen_unless {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (u)nless
+            bindings = <&kp N &kp L &kp E &kp S &kp S>;
+        };
+        amen_underlying: amen_underlying {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (u)nderlying
+            bindings = <&kp N &kp D &kp E &kp R &kp L &kp Y &kp I &kp N &kp G>;
+        };
+        amen_unknown: amen_unknown {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (u)nknown
+            bindings = <&kp N &kp K &kp N &kp O &kp W &kp N>;
+        };
+        amen_unpredictable: amen_unpredictable {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (u)npredictable
+            bindings = <&kp N &kp P &kp R &kp E &kp D &kp I &kp C &kp T &kp A &kp B &kp L &kp E>;
+        };
         amen_up_to_a_point: amen_up_to_a_point {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1378,38 +1410,6 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // (u)p to you
             bindings = <&kp P &kp SPACE &kp T &kp O &kp SPACE &kp Y &kp O &kp U>;
-        };
-        amen_unknown: amen_unknown {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (u)nknown
-            bindings = <&kp N &kp K &kp N &kp O &kp W &kp N>;
-        };
-        amen_unpredictable: amen_unpredictable {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (u)npredictable
-            bindings = <&kp N &kp P &kp R &kp E &kp D &kp I &kp C &kp T &kp A &kp B &kp L &kp E>;
-        };
-        amen_unless: amen_unless {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (u)nless
-            bindings = <&kp N &kp L &kp E &kp S &kp S>;
-        };
-        amen_underlying: amen_underlying {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (u)nderlying
-            bindings = <&kp N &kp D &kp E &kp R &kp L &kp Y &kp I &kp N &kp G>;
         };
         amen_unconditionally: amen_unconditionally {
             compatible = "zmk,behavior-macro";
@@ -1499,29 +1499,29 @@
             // (y)ou’ve
             bindings = <&kp O &kp U &kp APOS &kp V &kp E>;
         };
-        amen_yearly: amen_yearly {
+        amen_you_know_what: amen_you_know_what {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (y)early
-            bindings = <&kp E &kp A &kp R &kp L &kp Y>;
+            // (y)ou-know-what
+            bindings = <&kp O &kp U &kp MINUS &kp K &kp N &kp O &kp W &kp MINUS &kp W &kp H &kp A &kp T>;
         };
-        amen_yesterday: amen_yesterday {
+        amen_you_all: amen_you_all {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (y)esterday
-            bindings = <&kp E &kp S &kp T &kp E &kp R &kp D &kp A &kp Y>;
+            // (y)ou-all
+            bindings = <&kp O &kp U &kp MINUS &kp A &kp L &kp L>;
         };
-        amen_you_name_it: amen_you_name_it {
+        amen_you_know_who: amen_you_know_who {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (y)ou name it
-            bindings = <&kp O &kp U &kp SPACE &kp N &kp A &kp M &kp E &kp SPACE &kp I &kp T>;
+            // (y)ou-know-who
+            bindings = <&kp O &kp U &kp MINUS &kp K &kp N &kp O &kp W &kp MINUS &kp W &kp H &kp O>;
         };
         amen_youtube: amen_youtube {
             compatible = "zmk,behavior-macro";
@@ -1571,29 +1571,29 @@
             // (y)es and no
             bindings = <&kp E &kp S &kp SPACE &kp A &kp N &kp D &kp SPACE &kp N &kp O>;
         };
-        amen_you_know_what: amen_you_know_what {
+        amen_yearly: amen_yearly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (y)ou-know-what
-            bindings = <&kp O &kp U &kp MINUS &kp K &kp N &kp O &kp W &kp MINUS &kp W &kp H &kp A &kp T>;
+            // (y)early
+            bindings = <&kp E &kp A &kp R &kp L &kp Y>;
         };
-        amen_you_all: amen_you_all {
+        amen_yesterday: amen_yesterday {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (y)ou-all
-            bindings = <&kp O &kp U &kp MINUS &kp A &kp L &kp L>;
+            // (y)esterday
+            bindings = <&kp E &kp S &kp T &kp E &kp R &kp D &kp A &kp Y>;
         };
-        amen_you_know_who: amen_you_know_who {
+        amen_you_name_it: amen_you_name_it {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (y)ou-know-who
-            bindings = <&kp O &kp U &kp MINUS &kp K &kp N &kp O &kp W &kp MINUS &kp W &kp H &kp O>;
+            // (y)ou name it
+            bindings = <&kp O &kp U &kp SPACE &kp N &kp A &kp M &kp E &kp SPACE &kp I &kp T>;
         };
         amen_yours_sincerely: amen_yours_sincerely {
             compatible = "zmk,behavior-macro";
@@ -1659,22 +1659,6 @@
             // [‘]won’t
             bindings = <&kp BSPC &kp W &kp O &kp N &kp APOS &kp T>;
         };
-        amen_wont: amen_wont {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [‘]Won’t
-            bindings = <&kp BSPC &kp LS(W) &kp O &kp N &kp APOS &kp T>;
-        };
-        amen_mightnt: amen_mightnt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [‘]Mightn’t
-            bindings = <&kp BSPC &kp LS(M) &kp I &kp G &kp H &kp T &kp N &kp APOS &kp T>;
-        };
         amen_didnt1: amen_didnt1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1698,6 +1682,22 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // [‘]Couldn’t
             bindings = <&kp BSPC &kp LS(C) &kp O &kp U &kp L &kp D &kp N &kp APOS &kp T>;
+        };
+        amen_wont: amen_wont {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [‘]Won’t
+            bindings = <&kp BSPC &kp LS(W) &kp O &kp N &kp APOS &kp T>;
+        };
+        amen_mightnt: amen_mightnt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [‘]Mightn’t
+            bindings = <&kp BSPC &kp LS(M) &kp I &kp G &kp H &kp T &kp N &kp APOS &kp T>;
         };
         amen_in_such_a_way_t: amen_in_such_a_way_t {
             compatible = "zmk,behavior-macro";
@@ -1779,29 +1779,29 @@
             // (a)pparently
             bindings = <&kp P &kp P &kp A &kp R &kp E &kp N &kp T &kp L &kp Y>;
         };
-        amen_actually: amen_actually {
+        amen_as_soon_as: amen_as_soon_as {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (a)ctually
-            bindings = <&kp C &kp T &kp U &kp A &kp L &kp L &kp Y>;
+            // (a)s soon as
+            bindings = <&kp S &kp SPACE &kp S &kp O &kp O &kp N &kp SPACE &kp A &kp S>;
         };
-        amen_although: amen_although {
+        amen_according_to: amen_according_to {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (a)lthough
-            bindings = <&kp L &kp T &kp H &kp O &kp U &kp G &kp H>;
+            // (a)ccording to
+            bindings = <&kp C &kp C &kp O &kp R &kp D &kp I &kp N &kp G &kp SPACE &kp T &kp O>;
         };
-        amen_all_things_cons: amen_all_things_cons {
+        amen_as_a_result1: amen_as_a_result1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (a)ll things considered
-            bindings = <&kp L &kp L &kp SPACE &kp T &kp H &kp I &kp N &kp G &kp S &kp SPACE &kp C &kp O &kp N &kp S &kp I &kp D &kp E &kp R &kp E &kp D>;
+            // (a)s a result
+            bindings = <&kp S &kp SPACE &kp A &kp SPACE &kp R &kp E &kp S &kp U &kp L &kp T>;
         };
         amen_as_regards: amen_as_regards {
             compatible = "zmk,behavior-macro";
@@ -1851,29 +1851,29 @@
             // (a)pril
             bindings = <&kp P &kp R &kp I &kp L>;
         };
-        amen_as_soon_as: amen_as_soon_as {
+        amen_actually: amen_actually {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (a)s soon as
-            bindings = <&kp S &kp SPACE &kp S &kp O &kp O &kp N &kp SPACE &kp A &kp S>;
+            // (a)ctually
+            bindings = <&kp C &kp T &kp U &kp A &kp L &kp L &kp Y>;
         };
-        amen_according_to: amen_according_to {
+        amen_although: amen_although {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (a)ccording to
-            bindings = <&kp C &kp C &kp O &kp R &kp D &kp I &kp N &kp G &kp SPACE &kp T &kp O>;
+            // (a)lthough
+            bindings = <&kp L &kp T &kp H &kp O &kp U &kp G &kp H>;
         };
-        amen_as_a_result1: amen_as_a_result1 {
+        amen_all_things_cons: amen_all_things_cons {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (a)s a result
-            bindings = <&kp S &kp SPACE &kp A &kp SPACE &kp R &kp E &kp S &kp U &kp L &kp T>;
+            // (a)ll things considered
+            bindings = <&kp L &kp L &kp SPACE &kp T &kp H &kp I &kp N &kp G &kp S &kp SPACE &kp C &kp O &kp N &kp S &kp I &kp D &kp E &kp R &kp E &kp D>;
         };
         amen_already: amen_already {
             compatible = "zmk,behavior-macro";
@@ -1963,21 +1963,29 @@
             // (r)esult
             bindings = <&kp E &kp S &kp U &kp L &kp T>;
         };
-        amen_rose_tinted_spe: amen_rose_tinted_spe {
+        amen_red_flag: amen_red_flag {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (r)ose-tinted spectacles
-            bindings = <&kp O &kp S &kp E &kp MINUS &kp T &kp I &kp N &kp T &kp E &kp D &kp SPACE &kp S &kp P &kp E &kp C &kp T &kp A &kp C &kp L &kp E &kp S>;
+            // (r)ed flag
+            bindings = <&kp E &kp D &kp SPACE &kp F &kp L &kp A &kp G>;
         };
-        amen_roughly_speakin: amen_roughly_speakin {
+        amen_recently: amen_recently {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (r)oughly speaking
-            bindings = <&kp O &kp U &kp G &kp H &kp L &kp Y &kp SPACE &kp S &kp P &kp E &kp A &kp K &kp I &kp N &kp G>;
+            // (r)ecently
+            bindings = <&kp E &kp C &kp E &kp N &kp T &kp L &kp Y>;
+        };
+        amen_report: amen_report {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (r)eport
+            bindings = <&kp E &kp P &kp O &kp R &kp T>;
         };
         amen_response: amen_response {
             compatible = "zmk,behavior-macro";
@@ -2003,29 +2011,21 @@
             // (r)esearch
             bindings = <&kp E &kp S &kp E &kp A &kp R &kp C &kp H>;
         };
-        amen_red_flag: amen_red_flag {
+        amen_rose_tinted_spe: amen_rose_tinted_spe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (r)ed flag
-            bindings = <&kp E &kp D &kp SPACE &kp F &kp L &kp A &kp G>;
+            // (r)ose-tinted spectacles
+            bindings = <&kp O &kp S &kp E &kp MINUS &kp T &kp I &kp N &kp T &kp E &kp D &kp SPACE &kp S &kp P &kp E &kp C &kp T &kp A &kp C &kp L &kp E &kp S>;
         };
-        amen_recently: amen_recently {
+        amen_roughly_speakin: amen_roughly_speakin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (r)ecently
-            bindings = <&kp E &kp C &kp E &kp N &kp T &kp L &kp Y>;
-        };
-        amen_report: amen_report {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (r)eport
-            bindings = <&kp E &kp P &kp O &kp R &kp T>;
+            // (r)oughly speaking
+            bindings = <&kp O &kp U &kp G &kp H &kp L &kp Y &kp SPACE &kp S &kp P &kp E &kp A &kp K &kp I &kp N &kp G>;
         };
         amen_red_handed: amen_red_handed {
             compatible = "zmk,behavior-macro";
@@ -2107,29 +2107,29 @@
             // (s)omeone
             bindings = <&kp O &kp M &kp E &kp O &kp N &kp E>;
         };
-        amen_simply_put: amen_simply_put {
+        amen_somewhat: amen_somewhat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (s)imply put
-            bindings = <&kp I &kp M &kp P &kp L &kp Y &kp SPACE &kp P &kp U &kp T>;
+            // (s)omewhat
+            bindings = <&kp O &kp M &kp E &kp W &kp H &kp A &kp T>;
         };
-        amen_suddenly: amen_suddenly {
+        amen_seeing_that: amen_seeing_that {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (s)uddenly
-            bindings = <&kp U &kp D &kp D &kp E &kp N &kp L &kp Y>;
+            // (s)eeing that
+            bindings = <&kp E &kp E &kp I &kp N &kp G &kp SPACE &kp T &kp H &kp A &kp T>;
         };
-        amen_significant: amen_significant {
+        amen_since: amen_since {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (s)ignificant
-            bindings = <&kp I &kp G &kp N &kp I &kp F &kp I &kp C &kp A &kp N &kp T>;
+            // (s)ince
+            bindings = <&kp I &kp N &kp C &kp E>;
         };
         amen_seriously: amen_seriously {
             compatible = "zmk,behavior-macro";
@@ -2179,29 +2179,29 @@
             // (s)eptember
             bindings = <&kp E &kp P &kp T &kp E &kp M &kp B &kp E &kp R>;
         };
-        amen_somewhat: amen_somewhat {
+        amen_simply_put: amen_simply_put {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (s)omewhat
-            bindings = <&kp O &kp M &kp E &kp W &kp H &kp A &kp T>;
+            // (s)imply put
+            bindings = <&kp I &kp M &kp P &kp L &kp Y &kp SPACE &kp P &kp U &kp T>;
         };
-        amen_seeing_that: amen_seeing_that {
+        amen_suddenly: amen_suddenly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (s)eeing that
-            bindings = <&kp E &kp E &kp I &kp N &kp G &kp SPACE &kp T &kp H &kp A &kp T>;
+            // (s)uddenly
+            bindings = <&kp U &kp D &kp D &kp E &kp N &kp L &kp Y>;
         };
-        amen_since: amen_since {
+        amen_significant: amen_significant {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (s)ince
-            bindings = <&kp I &kp N &kp C &kp E>;
+            // (s)ignificant
+            bindings = <&kp I &kp G &kp N &kp I &kp F &kp I &kp C &kp A &kp N &kp T>;
         };
         amen_specially: amen_specially {
             compatible = "zmk,behavior-macro";
@@ -2291,29 +2291,29 @@
             // (t)he other day
             bindings = <&kp H &kp E &kp SPACE &kp O &kp T &kp H &kp E &kp R &kp SPACE &kp D &kp A &kp Y>;
         };
-        amen_taken_together: amen_taken_together {
+        amen_the_moment: amen_the_moment {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (t)aken together
-            bindings = <&kp A &kp K &kp E &kp N &kp SPACE &kp T &kp O &kp G &kp E &kp T &kp H &kp E &kp R>;
+            // (t)he moment
+            bindings = <&kp H &kp E &kp SPACE &kp M &kp O &kp M &kp E &kp N &kp T>;
         };
-        amen_thats_all_very_: amen_thats_all_very_ {
+        amen_therefore: amen_therefore {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (t)hat’s all very well
-            bindings = <&kp H &kp A &kp T &kp APOS &kp S &kp SPACE &kp A &kp L &kp L &kp SPACE &kp V &kp E &kp R &kp Y &kp SPACE &kp W &kp E &kp L &kp L>;
+            // (t)herefore
+            bindings = <&kp H &kp E &kp R &kp E &kp F &kp O &kp R &kp E>;
         };
-        amen_the_facts_sugge: amen_the_facts_sugge {
+        amen_throughout: amen_throughout {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (t)he facts suggest that
-            bindings = <&kp H &kp E &kp SPACE &kp F &kp A &kp C &kp T &kp S &kp SPACE &kp S &kp U &kp G &kp G &kp E &kp S &kp T &kp SPACE &kp T &kp H &kp A &kp T>;
+            // (t)hroughout
+            bindings = <&kp H &kp R &kp O &kp U &kp G &kp H &kp O &kp U &kp T>;
         };
         amen_the_odds_are: amen_the_odds_are {
             compatible = "zmk,behavior-macro";
@@ -2363,29 +2363,29 @@
             // (t)o no one’s surprise
             bindings = <&kp O &kp SPACE &kp N &kp O &kp SPACE &kp O &kp N &kp E &kp APOS &kp S &kp SPACE &kp S &kp U &kp R &kp P &kp R &kp I &kp S &kp E>;
         };
-        amen_the_moment: amen_the_moment {
+        amen_taken_together: amen_taken_together {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (t)he moment
-            bindings = <&kp H &kp E &kp SPACE &kp M &kp O &kp M &kp E &kp N &kp T>;
+            // (t)aken together
+            bindings = <&kp A &kp K &kp E &kp N &kp SPACE &kp T &kp O &kp G &kp E &kp T &kp H &kp E &kp R>;
         };
-        amen_therefore: amen_therefore {
+        amen_thats_all_very_: amen_thats_all_very_ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (t)herefore
-            bindings = <&kp H &kp E &kp R &kp E &kp F &kp O &kp R &kp E>;
+            // (t)hat’s all very well
+            bindings = <&kp H &kp A &kp T &kp APOS &kp S &kp SPACE &kp A &kp L &kp L &kp SPACE &kp V &kp E &kp R &kp Y &kp SPACE &kp W &kp E &kp L &kp L>;
         };
-        amen_throughout: amen_throughout {
+        amen_the_facts_sugge: amen_the_facts_sugge {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (t)hroughout
-            bindings = <&kp H &kp R &kp O &kp U &kp G &kp H &kp O &kp U &kp T>;
+            // (t)he facts suggest that
+            bindings = <&kp H &kp E &kp SPACE &kp F &kp A &kp C &kp T &kp S &kp SPACE &kp S &kp U &kp G &kp G &kp E &kp S &kp T &kp SPACE &kp T &kp H &kp A &kp T>;
         };
         amen_themselves: amen_themselves {
             compatible = "zmk,behavior-macro";
@@ -2467,22 +2467,6 @@
             // (g)iven
             bindings = <&kp I &kp V &kp E &kp N>;
         };
-        amen_go_ahead: amen_go_ahead {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (g)o-ahead
-            bindings = <&kp O &kp MINUS &kp A &kp H &kp E &kp A &kp D>;
-        };
-        amen_getting_anywher: amen_getting_anywher {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (g)etting anywhere
-            bindings = <&kp E &kp T &kp T &kp I &kp N &kp G &kp SPACE &kp A &kp N &kp Y &kp W &kp H &kp E &kp R &kp E>;
-        };
         amen_greater_than: amen_greater_than {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -2506,6 +2490,22 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // (g)reat deal of
             bindings = <&kp R &kp E &kp A &kp T &kp SPACE &kp D &kp E &kp A &kp L &kp SPACE &kp O &kp F>;
+        };
+        amen_go_ahead: amen_go_ahead {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (g)o-ahead
+            bindings = <&kp O &kp MINUS &kp A &kp H &kp E &kp A &kp D>;
+        };
+        amen_getting_anywher: amen_getting_anywher {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (g)etting anywhere
+            bindings = <&kp E &kp T &kp T &kp I &kp N &kp G &kp SPACE &kp A &kp N &kp Y &kp W &kp H &kp E &kp R &kp E>;
         };
         amen_green_light: amen_green_light {
             compatible = "zmk,behavior-macro";
@@ -2579,29 +2579,29 @@
             // (m)ainstream
             bindings = <&kp A &kp I &kp N &kp S &kp T &kp R &kp E &kp A &kp M>;
         };
-        amen_merely: amen_merely {
+        amen_miscellaneous: amen_miscellaneous {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (m)erely
-            bindings = <&kp E &kp R &kp E &kp L &kp Y>;
+            // (m)iscellaneous
+            bindings = <&kp I &kp S &kp C &kp E &kp L &kp L &kp A &kp N &kp E &kp O &kp U &kp S>;
         };
-        amen_might: amen_might {
+        amen_mutually: amen_mutually {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (m)ight
-            bindings = <&kp I &kp G &kp H &kp T>;
+            // (m)utually
+            bindings = <&kp U &kp T &kp U &kp A &kp L &kp L &kp Y>;
         };
-        amen_moving_on: amen_moving_on {
+        amen_myself_included: amen_myself_included {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (m)oving on
-            bindings = <&kp O &kp V &kp I &kp N &kp G &kp SPACE &kp O &kp N>;
+            // (m)yself included
+            bindings = <&kp Y &kp S &kp E &kp L &kp F &kp SPACE &kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp D>;
         };
         amen_marginally: amen_marginally {
             compatible = "zmk,behavior-macro";
@@ -2651,29 +2651,29 @@
             // (m)ake the most of
             bindings = <&kp A &kp K &kp E &kp SPACE &kp T &kp H &kp E &kp SPACE &kp M &kp O &kp S &kp T &kp SPACE &kp O &kp F>;
         };
-        amen_miscellaneous: amen_miscellaneous {
+        amen_merely: amen_merely {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (m)iscellaneous
-            bindings = <&kp I &kp S &kp C &kp E &kp L &kp L &kp A &kp N &kp E &kp O &kp U &kp S>;
+            // (m)erely
+            bindings = <&kp E &kp R &kp E &kp L &kp Y>;
         };
-        amen_mutually: amen_mutually {
+        amen_might: amen_might {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (m)utually
-            bindings = <&kp U &kp T &kp U &kp A &kp L &kp L &kp Y>;
+            // (m)ight
+            bindings = <&kp I &kp G &kp H &kp T>;
         };
-        amen_myself_included: amen_myself_included {
+        amen_moving_on: amen_moving_on {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (m)yself included
-            bindings = <&kp Y &kp S &kp E &kp L &kp F &kp SPACE &kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp D>;
+            // (m)oving on
+            bindings = <&kp O &kp V &kp I &kp N &kp G &kp SPACE &kp O &kp N>;
         };
         amen_member: amen_member {
             compatible = "zmk,behavior-macro";
@@ -2763,29 +2763,29 @@
             // (n)ow that
             bindings = <&kp O &kp W &kp SPACE &kp T &kp H &kp A &kp T>;
         };
-        amen_nobody: amen_nobody {
+        amen_not_to_mention: amen_not_to_mention {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (n)obody
-            bindings = <&kp O &kp B &kp O &kp D &kp Y>;
+            // (n)ot to mention
+            bindings = <&kp O &kp T &kp SPACE &kp T &kp O &kp SPACE &kp M &kp E &kp N &kp T &kp I &kp O &kp N>;
         };
-        amen_nothing: amen_nothing {
+        amen_nevertheless: amen_nevertheless {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (n)othing
-            bindings = <&kp O &kp T &kp H &kp I &kp N &kp G>;
+            // (n)evertheless
+            bindings = <&kp E &kp V &kp E &kp R &kp T &kp H &kp E &kp L &kp E &kp S &kp S>;
         };
-        amen_no_one: amen_no_one {
+        amen_naive: amen_naive {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (n)o one
-            bindings = <&kp O &kp SPACE &kp O &kp N &kp E>;
+            // (n)aive
+            bindings = <&kp A &kp I &kp V &kp E>;
         };
         amen_nothing_much: amen_nothing_much {
             compatible = "zmk,behavior-macro";
@@ -2835,29 +2835,29 @@
             // (n)otwithstanding
             bindings = <&kp O &kp T &kp W &kp I &kp T &kp H &kp S &kp T &kp A &kp N &kp D &kp I &kp N &kp G>;
         };
-        amen_not_to_mention: amen_not_to_mention {
+        amen_nobody: amen_nobody {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (n)ot to mention
-            bindings = <&kp O &kp T &kp SPACE &kp T &kp O &kp SPACE &kp M &kp E &kp N &kp T &kp I &kp O &kp N>;
+            // (n)obody
+            bindings = <&kp O &kp B &kp O &kp D &kp Y>;
         };
-        amen_nevertheless: amen_nevertheless {
+        amen_nothing: amen_nothing {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (n)evertheless
-            bindings = <&kp E &kp V &kp E &kp R &kp T &kp H &kp E &kp L &kp E &kp S &kp S>;
+            // (n)othing
+            bindings = <&kp O &kp T &kp H &kp I &kp N &kp G>;
         };
-        amen_naive: amen_naive {
+        amen_no_one: amen_no_one {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (n)aive
-            bindings = <&kp A &kp I &kp V &kp E>;
+            // (n)o one
+            bindings = <&kp O &kp SPACE &kp O &kp N &kp E>;
         };
         amen_necessary: amen_necessary {
             compatible = "zmk,behavior-macro";
@@ -2947,29 +2947,21 @@
             // (e)vidence
             bindings = <&kp V &kp I &kp D &kp E &kp N &kp C &kp E>;
         };
-        amen_explicitily: amen_explicitily {
+        amen_each_other: amen_each_other {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (e)xplicitily
-            bindings = <&kp X &kp P &kp L &kp I &kp C &kp I &kp T &kp I &kp L &kp Y>;
+            // (e)ach other
+            bindings = <&kp A &kp C &kp H &kp SPACE &kp O &kp T &kp H &kp E &kp R>;
         };
-        amen_eventually: amen_eventually {
+        amen_even_though: amen_even_though {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (e)ventually
-            bindings = <&kp V &kp E &kp N &kp T &kp U &kp A &kp L &kp L &kp Y>;
-        };
-        amen_elsewhere: amen_elsewhere {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (e)lsewhere
-            bindings = <&kp L &kp S &kp E &kp W &kp H &kp E &kp R &kp E>;
+            // (e)ven though
+            bindings = <&kp V &kp E &kp N &kp SPACE &kp T &kp H &kp O &kp U &kp G &kp H>;
         };
         amen_except_for: amen_except_for {
             compatible = "zmk,behavior-macro";
@@ -3011,21 +3003,29 @@
             // (e)xperience
             bindings = <&kp X &kp P &kp E &kp R &kp I &kp E &kp N &kp C &kp E>;
         };
-        amen_each_other: amen_each_other {
+        amen_explicitily: amen_explicitily {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (e)ach other
-            bindings = <&kp A &kp C &kp H &kp SPACE &kp O &kp T &kp H &kp E &kp R>;
+            // (e)xplicitily
+            bindings = <&kp X &kp P &kp L &kp I &kp C &kp I &kp T &kp I &kp L &kp Y>;
         };
-        amen_even_though: amen_even_though {
+        amen_eventually: amen_eventually {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (e)ven though
-            bindings = <&kp V &kp E &kp N &kp SPACE &kp T &kp H &kp O &kp U &kp G &kp H>;
+            // (e)ventually
+            bindings = <&kp V &kp E &kp N &kp T &kp U &kp A &kp L &kp L &kp Y>;
+        };
+        amen_elsewhere: amen_elsewhere {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (e)lsewhere
+            bindings = <&kp L &kp S &kp E &kp W &kp H &kp E &kp R &kp E>;
         };
         amen_especially: amen_especially {
             compatible = "zmk,behavior-macro";
@@ -3115,29 +3115,29 @@
             // (i)rreversible
             bindings = <&kp R &kp R &kp E &kp V &kp E &kp R &kp S &kp I &kp B &kp L &kp E>;
         };
-        amen_in_spite_of: amen_in_spite_of {
+        amen_in_conclusion: amen_in_conclusion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (i)n spite of
-            bindings = <&kp N &kp SPACE &kp S &kp P &kp I &kp T &kp E &kp SPACE &kp O &kp F>;
+            // (i)n conclusion
+            bindings = <&kp N &kp SPACE &kp C &kp O &kp N &kp C &kp L &kp U &kp S &kp I &kp O &kp N>;
         };
-        amen_instance: amen_instance {
+        amen_it_looks_like: amen_it_looks_like {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (i)nstance
-            bindings = <&kp N &kp S &kp T &kp A &kp N &kp C &kp E>;
+            // (i)t looks like
+            bindings = <&kp T &kp SPACE &kp L &kp O &kp O &kp K &kp S &kp SPACE &kp L &kp I &kp K &kp E>;
         };
-        amen_in_the_main: amen_in_the_main {
+        amen_incomprehensibl: amen_incomprehensibl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (i)n the main
-            bindings = <&kp N &kp SPACE &kp T &kp H &kp E &kp SPACE &kp M &kp A &kp I &kp N>;
+            // (i)ncomprehensible
+            bindings = <&kp N &kp C &kp O &kp M &kp P &kp R &kp E &kp H &kp E &kp N &kp S &kp I &kp B &kp L &kp E>;
         };
         amen_in_the_words_of: amen_in_the_words_of {
             compatible = "zmk,behavior-macro";
@@ -3187,29 +3187,29 @@
             // (i)n the dark
             bindings = <&kp N &kp SPACE &kp T &kp H &kp E &kp SPACE &kp D &kp A &kp R &kp K>;
         };
-        amen_in_conclusion: amen_in_conclusion {
+        amen_in_spite_of: amen_in_spite_of {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (i)n conclusion
-            bindings = <&kp N &kp SPACE &kp C &kp O &kp N &kp C &kp L &kp U &kp S &kp I &kp O &kp N>;
+            // (i)n spite of
+            bindings = <&kp N &kp SPACE &kp S &kp P &kp I &kp T &kp E &kp SPACE &kp O &kp F>;
         };
-        amen_it_looks_like: amen_it_looks_like {
+        amen_instance: amen_instance {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (i)t looks like
-            bindings = <&kp T &kp SPACE &kp L &kp O &kp O &kp K &kp S &kp SPACE &kp L &kp I &kp K &kp E>;
+            // (i)nstance
+            bindings = <&kp N &kp S &kp T &kp A &kp N &kp C &kp E>;
         };
-        amen_incomprehensibl: amen_incomprehensibl {
+        amen_in_the_main: amen_in_the_main {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (i)ncomprehensible
-            bindings = <&kp N &kp C &kp O &kp M &kp P &kp R &kp E &kp H &kp E &kp N &kp S &kp I &kp B &kp L &kp E>;
+            // (i)n the main
+            bindings = <&kp N &kp SPACE &kp T &kp H &kp E &kp SPACE &kp M &kp A &kp I &kp N>;
         };
         amen_immediately: amen_immediately {
             compatible = "zmk,behavior-macro";
@@ -3299,29 +3299,29 @@
             // (o)n balance
             bindings = <&kp N &kp SPACE &kp B &kp A &kp L &kp A &kp N &kp C &kp E>;
         };
-        amen_out_of_the_blue: amen_out_of_the_blue {
+        amen_on_the_contrary: amen_on_the_contrary {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (o)ut of the blue
-            bindings = <&kp U &kp T &kp SPACE &kp O &kp F &kp SPACE &kp T &kp H &kp E &kp SPACE &kp B &kp L &kp U &kp E>;
+            // (o)n the contrary
+            bindings = <&kp N &kp SPACE &kp T &kp H &kp E &kp SPACE &kp C &kp O &kp N &kp T &kp R &kp A &kp R &kp Y>;
         };
-        amen_object: amen_object {
+        amen_on_the_whole: amen_on_the_whole {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (o)bject
-            bindings = <&kp B &kp J &kp E &kp C &kp T>;
+            // (o)n the whole
+            bindings = <&kp N &kp SPACE &kp T &kp H &kp E &kp SPACE &kp W &kp H &kp O &kp L &kp E>;
         };
-        amen_one_another: amen_one_another {
+        amen_one_of_these_da: amen_one_of_these_da {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (o)ne another
-            bindings = <&kp N &kp E &kp SPACE &kp A &kp N &kp O &kp T &kp H &kp E &kp R>;
+            // (o)ne of these days
+            bindings = <&kp N &kp E &kp SPACE &kp O &kp F &kp SPACE &kp T &kp H &kp E &kp S &kp E &kp SPACE &kp D &kp A &kp Y &kp S>;
         };
         amen_off_putting: amen_off_putting {
             compatible = "zmk,behavior-macro";
@@ -3371,29 +3371,29 @@
             // (o)ff the top of my head
             bindings = <&kp F &kp F &kp SPACE &kp T &kp H &kp E &kp SPACE &kp T &kp O &kp P &kp SPACE &kp O &kp F &kp SPACE &kp M &kp Y &kp SPACE &kp H &kp E &kp A &kp D>;
         };
-        amen_on_the_contrary: amen_on_the_contrary {
+        amen_out_of_the_blue: amen_out_of_the_blue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (o)n the contrary
-            bindings = <&kp N &kp SPACE &kp T &kp H &kp E &kp SPACE &kp C &kp O &kp N &kp T &kp R &kp A &kp R &kp Y>;
+            // (o)ut of the blue
+            bindings = <&kp U &kp T &kp SPACE &kp O &kp F &kp SPACE &kp T &kp H &kp E &kp SPACE &kp B &kp L &kp U &kp E>;
         };
-        amen_on_the_whole: amen_on_the_whole {
+        amen_object: amen_object {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (o)n the whole
-            bindings = <&kp N &kp SPACE &kp T &kp H &kp E &kp SPACE &kp W &kp H &kp O &kp L &kp E>;
+            // (o)bject
+            bindings = <&kp B &kp J &kp E &kp C &kp T>;
         };
-        amen_one_of_these_da: amen_one_of_these_da {
+        amen_one_another: amen_one_another {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (o)ne of these days
-            bindings = <&kp N &kp E &kp SPACE &kp O &kp F &kp SPACE &kp T &kp H &kp E &kp S &kp E &kp SPACE &kp D &kp A &kp Y &kp S>;
+            // (o)ne another
+            bindings = <&kp N &kp E &kp SPACE &kp A &kp N &kp O &kp T &kp H &kp E &kp R>;
         };
         amen_or_else: amen_or_else {
             compatible = "zmk,behavior-macro";
@@ -3475,22 +3475,6 @@
             // (z)oom
             bindings = <&kp O &kp O &kp M>;
         };
-        amen_zenith: amen_zenith {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (z)enith
-            bindings = <&kp E &kp N &kp I &kp T &kp H>;
-        };
-        amen_zealot: amen_zealot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (z)ealot
-            bindings = <&kp E &kp A &kp L &kp O &kp T>;
-        };
         amen_zero_in_on: amen_zero_in_on {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -3506,6 +3490,22 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // (z)ealous
             bindings = <&kp E &kp A &kp L &kp O &kp U &kp S>;
+        };
+        amen_zenith: amen_zenith {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (z)enith
+            bindings = <&kp E &kp N &kp I &kp T &kp H>;
+        };
+        amen_zealot: amen_zealot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (z)ealot
+            bindings = <&kp E &kp A &kp L &kp O &kp T>;
         };
         amen_zillion: amen_zillion {
             compatible = "zmk,behavior-macro";
@@ -3579,21 +3579,29 @@
             // [x]I’m toying with the idea of
             bindings = <&kp BSPC &kp LS(I) &kp APOS &kp M &kp SPACE &kp T &kp O &kp Y &kp I &kp N &kp G &kp SPACE &kp W &kp I &kp T &kp H &kp SPACE &kp T &kp H &kp E &kp SPACE &kp I &kp D &kp E &kp A &kp SPACE &kp O &kp F>;
         };
-        amen_it_appears_that: amen_it_appears_that {
+        amen_it_occurs_to_me: amen_it_occurs_to_me {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [x]It appears that
-            bindings = <&kp BSPC &kp LS(I) &kp T &kp SPACE &kp A &kp P &kp P &kp E &kp A &kp R &kp S &kp SPACE &kp T &kp H &kp A &kp T>;
+            // [x]It occurs to me
+            bindings = <&kp BSPC &kp LS(I) &kp T &kp SPACE &kp O &kp C &kp C &kp U &kp R &kp S &kp SPACE &kp T &kp O &kp SPACE &kp M &kp E>;
         };
-        amen_sort_it_out_onc: amen_sort_it_out_onc {
+        amen_its_just_dawned: amen_its_just_dawned {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [x]sort it out once and for all
-            bindings = <&kp BSPC &kp S &kp O &kp R &kp T &kp SPACE &kp I &kp T &kp SPACE &kp O &kp U &kp T &kp SPACE &kp O &kp N &kp C &kp E &kp SPACE &kp A &kp N &kp D &kp SPACE &kp F &kp O &kp R &kp SPACE &kp A &kp L &kp L>;
+            // [x]It’s just dawned on me
+            bindings = <&kp BSPC &kp LS(I) &kp T &kp APOS &kp S &kp SPACE &kp J &kp U &kp S &kp T &kp SPACE &kp D &kp A &kp W &kp N &kp E &kp D &kp SPACE &kp O &kp N &kp SPACE &kp M &kp E>;
+        };
+        amen_i_gather: amen_i_gather {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [x]I gather
+            bindings = <&kp BSPC &kp LS(I) &kp SPACE &kp G &kp A &kp T &kp H &kp E &kp R>;
         };
         amen_as_we_have_seen: amen_as_we_have_seen {
             compatible = "zmk,behavior-macro";
@@ -3619,29 +3627,21 @@
             // [x]Suffice it to say
             bindings = <&kp BSPC &kp LS(S) &kp U &kp F &kp F &kp I &kp C &kp E &kp SPACE &kp I &kp T &kp SPACE &kp T &kp O &kp SPACE &kp S &kp A &kp Y>;
         };
-        amen_it_occurs_to_me: amen_it_occurs_to_me {
+        amen_it_appears_that: amen_it_appears_that {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [x]It occurs to me
-            bindings = <&kp BSPC &kp LS(I) &kp T &kp SPACE &kp O &kp C &kp C &kp U &kp R &kp S &kp SPACE &kp T &kp O &kp SPACE &kp M &kp E>;
+            // [x]It appears that
+            bindings = <&kp BSPC &kp LS(I) &kp T &kp SPACE &kp A &kp P &kp P &kp E &kp A &kp R &kp S &kp SPACE &kp T &kp H &kp A &kp T>;
         };
-        amen_its_just_dawned: amen_its_just_dawned {
+        amen_sort_it_out_onc: amen_sort_it_out_onc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [x]It’s just dawned on me
-            bindings = <&kp BSPC &kp LS(I) &kp T &kp APOS &kp S &kp SPACE &kp J &kp U &kp S &kp T &kp SPACE &kp D &kp A &kp W &kp N &kp E &kp D &kp SPACE &kp O &kp N &kp SPACE &kp M &kp E>;
-        };
-        amen_i_gather: amen_i_gather {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [x]I gather
-            bindings = <&kp BSPC &kp LS(I) &kp SPACE &kp G &kp A &kp T &kp H &kp E &kp R>;
+            // [x]sort it out once and for all
+            bindings = <&kp BSPC &kp S &kp O &kp R &kp T &kp SPACE &kp I &kp T &kp SPACE &kp O &kp U &kp T &kp SPACE &kp O &kp N &kp C &kp E &kp SPACE &kp A &kp N &kp D &kp SPACE &kp F &kp O &kp R &kp SPACE &kp A &kp L &kp L>;
         };
         amen_we_now_turn_to: amen_we_now_turn_to {
             compatible = "zmk,behavior-macro";
@@ -3731,29 +3731,29 @@
             // (c)oncerning
             bindings = <&kp O &kp N &kp C &kp E &kp R &kp N &kp I &kp N &kp G>;
         };
-        amen_common_ground: amen_common_ground {
+        amen_characteristica: amen_characteristica {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (c)ommon ground
-            bindings = <&kp O &kp M &kp M &kp O &kp N &kp SPACE &kp G &kp R &kp O &kp U &kp N &kp D>;
+            // (c)haracteristically
+            bindings = <&kp H &kp A &kp R &kp A &kp C &kp T &kp E &kp R &kp I &kp S &kp T &kp I &kp C &kp A &kp L &kp L &kp Y>;
         };
-        amen_conversely: amen_conversely {
+        amen_consequently: amen_consequently {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (c)onversely
-            bindings = <&kp O &kp N &kp V &kp E &kp R &kp S &kp E &kp L &kp Y>;
+            // (c)onsequently
+            bindings = <&kp O &kp N &kp S &kp E &kp Q &kp U &kp E &kp N &kp T &kp L &kp Y>;
         };
-        amen_candidate: amen_candidate {
+        amen_contrary_to_exp: amen_contrary_to_exp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (c)andidate
-            bindings = <&kp A &kp N &kp D &kp I &kp D &kp A &kp T &kp E>;
+            // (c)ontrary to expectations
+            bindings = <&kp O &kp N &kp T &kp R &kp A &kp R &kp Y &kp SPACE &kp T &kp O &kp SPACE &kp E &kp X &kp P &kp E &kp C &kp T &kp A &kp T &kp I &kp O &kp N &kp S>;
         };
         amen_condition: amen_condition {
             compatible = "zmk,behavior-macro";
@@ -3779,29 +3779,29 @@
             // (c)haracter
             bindings = <&kp H &kp A &kp R &kp A &kp C &kp T &kp E &kp R>;
         };
-        amen_characteristica: amen_characteristica {
+        amen_common_ground: amen_common_ground {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (c)haracteristically
-            bindings = <&kp H &kp A &kp R &kp A &kp C &kp T &kp E &kp R &kp I &kp S &kp T &kp I &kp C &kp A &kp L &kp L &kp Y>;
+            // (c)ommon ground
+            bindings = <&kp O &kp M &kp M &kp O &kp N &kp SPACE &kp G &kp R &kp O &kp U &kp N &kp D>;
         };
-        amen_consequently: amen_consequently {
+        amen_conversely: amen_conversely {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (c)onsequently
-            bindings = <&kp O &kp N &kp S &kp E &kp Q &kp U &kp E &kp N &kp T &kp L &kp Y>;
+            // (c)onversely
+            bindings = <&kp O &kp N &kp V &kp E &kp R &kp S &kp E &kp L &kp Y>;
         };
-        amen_contrary_to_exp: amen_contrary_to_exp {
+        amen_candidate: amen_candidate {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (c)ontrary to expectations
-            bindings = <&kp O &kp N &kp T &kp R &kp A &kp R &kp Y &kp SPACE &kp T &kp O &kp SPACE &kp E &kp X &kp P &kp E &kp C &kp T &kp A &kp T &kp I &kp O &kp N &kp S>;
+            // (c)andidate
+            bindings = <&kp A &kp N &kp D &kp I &kp D &kp A &kp T &kp E>;
         };
         amen_constructively: amen_constructively {
             compatible = "zmk,behavior-macro";
@@ -3891,14 +3891,6 @@
             // (d)ay in, day out
             bindings = <&kp A &kp Y &kp SPACE &kp I &kp N &kp COMMA &kp SPACE &kp D &kp A &kp Y &kp SPACE &kp O &kp U &kp T>;
         };
-        amen_december: amen_december {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (d)ecember
-            bindings = <&kp E &kp C &kp E &kp M &kp B &kp E &kp R>;
-        };
         amen_doubtless: amen_doubtless {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -3922,6 +3914,14 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // (d)ear Sir/Madam,
             bindings = <&kp E &kp A &kp R &kp SPACE &kp LS(S) &kp I &kp R &kp FSLH &kp LS(M) &kp A &kp D &kp A &kp M &kp COMMA>;
+        };
+        amen_december: amen_december {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (d)ecember
+            bindings = <&kp E &kp C &kp E &kp M &kp B &kp E &kp R>;
         };
         amen_verbally: amen_verbally {
             compatible = "zmk,behavior-macro";
@@ -3987,29 +3987,29 @@
             // (v)isible
             bindings = <&kp I &kp S &kp I &kp B &kp L &kp E>;
         };
-        amen_vociferously: amen_vociferously {
+        amen_valid: amen_valid {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (v)ociferously
-            bindings = <&kp O &kp C &kp I &kp F &kp E &kp R &kp O &kp U &kp S &kp L &kp Y>;
+            // (v)alid
+            bindings = <&kp A &kp L &kp I &kp D>;
         };
-        amen_vantage_point: amen_vantage_point {
+        amen_various: amen_various {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (v)antage point
-            bindings = <&kp A &kp N &kp T &kp A &kp G &kp E &kp SPACE &kp P &kp O &kp I &kp N &kp T>;
+            // (v)arious
+            bindings = <&kp A &kp R &kp I &kp O &kp U &kp S>;
         };
-        amen_violation: amen_violation {
+        amen_variety: amen_variety {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (v)iolation
-            bindings = <&kp I &kp O &kp L &kp A &kp T &kp I &kp O &kp N>;
+            // (v)ariety
+            bindings = <&kp A &kp R &kp I &kp E &kp T &kp Y>;
         };
         amen_versatile: amen_versatile {
             compatible = "zmk,behavior-macro";
@@ -4059,29 +4059,29 @@
             // (v)ariation
             bindings = <&kp A &kp R &kp I &kp A &kp T &kp I &kp O &kp N>;
         };
-        amen_valid: amen_valid {
+        amen_vociferously: amen_vociferously {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (v)alid
-            bindings = <&kp A &kp L &kp I &kp D>;
+            // (v)ociferously
+            bindings = <&kp O &kp C &kp I &kp F &kp E &kp R &kp O &kp U &kp S &kp L &kp Y>;
         };
-        amen_various: amen_various {
+        amen_vantage_point: amen_vantage_point {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (v)arious
-            bindings = <&kp A &kp R &kp I &kp O &kp U &kp S>;
+            // (v)antage point
+            bindings = <&kp A &kp N &kp T &kp A &kp G &kp E &kp SPACE &kp P &kp O &kp I &kp N &kp T>;
         };
-        amen_variety: amen_variety {
+        amen_violation: amen_violation {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (v)ariety
-            bindings = <&kp A &kp R &kp I &kp E &kp T &kp Y>;
+            // (v)iolation
+            bindings = <&kp I &kp O &kp L &kp A &kp T &kp I &kp O &kp N>;
         };
         amen_valuable: amen_valuable {
             compatible = "zmk,behavior-macro";
@@ -4163,6 +4163,14 @@
             // (k)ey factor
             bindings = <&kp E &kp Y &kp SPACE &kp F &kp A &kp C &kp T &kp O &kp R>;
         };
+        amen_key_element: amen_key_element {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (k)ey element
+            bindings = <&kp E &kp Y &kp SPACE &kp E &kp L &kp E &kp M &kp E &kp N &kp T>;
+        };
         amen_killer_feature: amen_killer_feature {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4178,14 +4186,6 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // (k)eyboard
             bindings = <&kp E &kp Y &kp B &kp O &kp A &kp R &kp D>;
-        };
-        amen_key_element: amen_key_element {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (k)ey element
-            bindings = <&kp E &kp Y &kp SPACE &kp E &kp L &kp E &kp M &kp E &kp N &kp T>;
         };
         amen_kiss_principle: amen_kiss_principle {
             compatible = "zmk,behavior-macro";
@@ -4259,6 +4259,38 @@
             // (h)ard as I tried
             bindings = <&kp A &kp R &kp D &kp SPACE &kp A &kp S &kp SPACE &kp LS(I) &kp SPACE &kp T &kp R &kp I &kp E &kp D>;
         };
+        amen_herself: amen_herself {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (h)erself
+            bindings = <&kp E &kp R &kp S &kp E &kp L &kp F>;
+        };
+        amen_himself: amen_himself {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (h)imself
+            bindings = <&kp I &kp M &kp S &kp E &kp L &kp F>;
+        };
+        amen_henceforth: amen_henceforth {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (h)enceforth
+            bindings = <&kp E &kp N &kp C &kp E &kp F &kp O &kp R &kp T &kp H>;
+        };
+        amen_here_and_there: amen_here_and_there {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // (h)ere and there
+            bindings = <&kp E &kp R &kp E &kp SPACE &kp A &kp N &kp D &kp SPACE &kp T &kp H &kp E &kp R &kp E>;
+        };
         amen_half_a_mind_to: amen_half_a_mind_to {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4282,38 +4314,6 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // (h)igh hopes of
             bindings = <&kp I &kp G &kp H &kp SPACE &kp H &kp O &kp P &kp E &kp S &kp SPACE &kp O &kp F>;
-        };
-        amen_henceforth: amen_henceforth {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (h)enceforth
-            bindings = <&kp E &kp N &kp C &kp E &kp F &kp O &kp R &kp T &kp H>;
-        };
-        amen_here_and_there: amen_here_and_there {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (h)ere and there
-            bindings = <&kp E &kp R &kp E &kp SPACE &kp A &kp N &kp D &kp SPACE &kp T &kp H &kp E &kp R &kp E>;
-        };
-        amen_herself: amen_herself {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (h)erself
-            bindings = <&kp E &kp R &kp S &kp E &kp L &kp F>;
-        };
-        amen_himself: amen_himself {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // (h)imself
-            bindings = <&kp I &kp M &kp S &kp E &kp L &kp F>;
         };
         amen_hardly_ever: amen_hardly_ever {
             compatible = "zmk,behavior-macro";
@@ -4387,30 +4387,6 @@
             // [.]In short, 
             bindings = <&kp BSPC &kp LS(I) &kp N &kp SPACE &kp S &kp H &kp O &kp R &kp T &kp COMMA &kp SPACE>;
         };
-        amen_to_summarise: amen_to_summarise {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [.]To summarise,
-            bindings = <&kp BSPC &kp LS(T) &kp O &kp SPACE &kp S &kp U &kp M &kp M &kp A &kp R &kp I &kp S &kp E &kp COMMA>;
-        };
-        amen_to_sum_up: amen_to_sum_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [.]To sum up,
-            bindings = <&kp BSPC &kp LS(T) &kp O &kp SPACE &kp S &kp U &kp M &kp SPACE &kp U &kp P &kp COMMA>;
-        };
-        amen_in_summary: amen_in_summary {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [.]In summary,
-            bindings = <&kp BSPC &kp LS(I) &kp N &kp SPACE &kp S &kp U &kp M &kp M &kp A &kp R &kp Y &kp COMMA>;
-        };
         amen_on_balance1: amen_on_balance1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4434,6 +4410,30 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // [.]It all boils down to
             bindings = <&kp BSPC &kp LS(I) &kp T &kp SPACE &kp A &kp L &kp L &kp SPACE &kp B &kp O &kp I &kp L &kp S &kp SPACE &kp D &kp O &kp W &kp N &kp SPACE &kp T &kp O>;
+        };
+        amen_to_summarise: amen_to_summarise {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [.]To summarise,
+            bindings = <&kp BSPC &kp LS(T) &kp O &kp SPACE &kp S &kp U &kp M &kp M &kp A &kp R &kp I &kp S &kp E &kp COMMA>;
+        };
+        amen_to_sum_up: amen_to_sum_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [.]To sum up,
+            bindings = <&kp BSPC &kp LS(T) &kp O &kp SPACE &kp S &kp U &kp M &kp SPACE &kp U &kp P &kp COMMA>;
+        };
+        amen_in_summary: amen_in_summary {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [.]In summary,
+            bindings = <&kp BSPC &kp LS(I) &kp N &kp SPACE &kp S &kp U &kp M &kp M &kp A &kp R &kp Y &kp COMMA>;
         };
         amen_in_conclusion1: amen_in_conclusion1 {
             compatible = "zmk,behavior-macro";
@@ -4483,14 +4483,6 @@
             // [/]To Whom It May Concern
             bindings = <&kp BSPC &kp LS(T) &kp O &kp SPACE &kp LS(W) &kp H &kp O &kp M &kp SPACE &kp LS(I) &kp T &kp SPACE &kp LS(M) &kp A &kp Y &kp SPACE &kp LS(C) &kp O &kp N &kp C &kp E &kp R &kp N>;
         };
-        amen_in_parenthesis1: amen_in_parenthesis1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [(]In parenthesis
-            bindings = <&kp BSPC &kp LS(I) &kp N &kp SPACE &kp P &kp A &kp R &kp E &kp N &kp T &kp H &kp E &kp S &kp I &kp S>;
-        };
         amen_in_parenthesis: amen_in_parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4498,6 +4490,14 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // [(]in parenthesis
             bindings = <&kp BSPC &kp I &kp N &kp SPACE &kp P &kp A &kp R &kp E &kp N &kp T &kp H &kp E &kp S &kp I &kp S>;
+        };
+        amen_in_parenthesis1: amen_in_parenthesis1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [(]In parenthesis
+            bindings = <&kp BSPC &kp LS(I) &kp N &kp SPACE &kp P &kp A &kp R &kp E &kp N &kp T &kp H &kp E &kp S &kp I &kp S>;
         };
         amen_no_pain_no_gain: amen_no_pain_no_gain {
             compatible = "zmk,behavior-macro";
@@ -4635,14 +4635,6 @@
             // [7]Sunday
             bindings = <&kp BSPC &kp LS(S) &kp U &kp N &kp D &kp A &kp Y>;
         };
-        amen_seventhly1: amen_seventhly1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [7]Seventhly
-            bindings = <&kp BSPC &kp LS(S) &kp E &kp V &kp E &kp N &kp T &kp H &kp L &kp Y>;
-        };
         amen_seventhly: amen_seventhly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4651,13 +4643,13 @@
             // [7]seventhly
             bindings = <&kp BSPC &kp S &kp E &kp V &kp E &kp N &kp T &kp H &kp L &kp Y>;
         };
-        amen_eighthly1: amen_eighthly1 {
+        amen_seventhly1: amen_seventhly1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [8]Eighthly
-            bindings = <&kp BSPC &kp LS(E) &kp I &kp G &kp H &kp T &kp H &kp L &kp Y>;
+            // [7]Seventhly
+            bindings = <&kp BSPC &kp LS(S) &kp E &kp V &kp E &kp N &kp T &kp H &kp L &kp Y>;
         };
         amen_eighthly: amen_eighthly {
             compatible = "zmk,behavior-macro";
@@ -4667,13 +4659,13 @@
             // [8]eighthly
             bindings = <&kp BSPC &kp E &kp I &kp G &kp H &kp T &kp H &kp L &kp Y>;
         };
-        amen_ninethly1: amen_ninethly1 {
+        amen_eighthly1: amen_eighthly1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [9]Ninethly
-            bindings = <&kp BSPC &kp LS(N) &kp I &kp N &kp E &kp T &kp H &kp L &kp Y>;
+            // [8]Eighthly
+            bindings = <&kp BSPC &kp LS(E) &kp I &kp G &kp H &kp T &kp H &kp L &kp Y>;
         };
         amen_ninethly: amen_ninethly {
             compatible = "zmk,behavior-macro";
@@ -4683,6 +4675,14 @@
             // [9]ninethly
             bindings = <&kp BSPC &kp N &kp I &kp N &kp E &kp T &kp H &kp L &kp Y>;
         };
+        amen_ninethly1: amen_ninethly1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [9]Ninethly
+            bindings = <&kp BSPC &kp LS(N) &kp I &kp N &kp E &kp T &kp H &kp L &kp Y>;
+        };
         amen_thursday: amen_thursday {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4690,14 +4690,6 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // [4]Thursday
             bindings = <&kp BSPC &kp LS(T) &kp H &kp U &kp R &kp S &kp D &kp A &kp Y>;
-        };
-        amen_fourthly1: amen_fourthly1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [4]Fourthly
-            bindings = <&kp BSPC &kp LS(F) &kp O &kp U &kp R &kp T &kp H &kp L &kp Y>;
         };
         amen_fourthly: amen_fourthly {
             compatible = "zmk,behavior-macro";
@@ -4707,6 +4699,14 @@
             // [4]fourthly
             bindings = <&kp BSPC &kp F &kp O &kp U &kp R &kp T &kp H &kp L &kp Y>;
         };
+        amen_fourthly1: amen_fourthly1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [4]Fourthly
+            bindings = <&kp BSPC &kp LS(F) &kp O &kp U &kp R &kp T &kp H &kp L &kp Y>;
+        };
         amen_friday: amen_friday {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4714,14 +4714,6 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // [5]Friday
             bindings = <&kp BSPC &kp LS(F) &kp R &kp I &kp D &kp A &kp Y>;
-        };
-        amen_fifthly1: amen_fifthly1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [5]Fifthly
-            bindings = <&kp BSPC &kp LS(F) &kp I &kp F &kp T &kp H &kp L &kp Y>;
         };
         amen_fifthly: amen_fifthly {
             compatible = "zmk,behavior-macro";
@@ -4731,6 +4723,14 @@
             // [5]fifthly
             bindings = <&kp BSPC &kp F &kp I &kp F &kp T &kp H &kp L &kp Y>;
         };
+        amen_fifthly1: amen_fifthly1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [5]Fifthly
+            bindings = <&kp BSPC &kp LS(F) &kp I &kp F &kp T &kp H &kp L &kp Y>;
+        };
         amen_saturday: amen_saturday {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4739,7 +4739,7 @@
             // [6]Saturday
             bindings = <&kp BSPC &kp LS(S) &kp A &kp T &kp U &kp R &kp D &kp A &kp Y>;
         };
-        amen_sixthly1: amen_sixthly1 {
+        amen_sixthly: amen_sixthly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
@@ -4747,7 +4747,7 @@
             // [6]Sixthly
             bindings = <&kp BSPC &kp LS(S) &kp I &kp X &kp T &kp H &kp L &kp Y>;
         };
-        amen_sixthly: amen_sixthly {
+        amen_sixthly1: amen_sixthly1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
@@ -4763,14 +4763,6 @@
             // [1]Monday
             bindings = <&kp BSPC &kp LS(M) &kp O &kp N &kp D &kp A &kp Y>;
         };
-        amen_firstly1: amen_firstly1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [1]Firstly
-            bindings = <&kp BSPC &kp LS(F) &kp I &kp R &kp S &kp T &kp L &kp Y>;
-        };
         amen_firstly: amen_firstly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4778,6 +4770,14 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // [1]firstly
             bindings = <&kp BSPC &kp F &kp I &kp R &kp S &kp T &kp L &kp Y>;
+        };
+        amen_firstly1: amen_firstly1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [1]Firstly
+            bindings = <&kp BSPC &kp LS(F) &kp I &kp R &kp S &kp T &kp L &kp Y>;
         };
         amen_tuesday: amen_tuesday {
             compatible = "zmk,behavior-macro";
@@ -4787,14 +4787,6 @@
             // [2]Tuesday
             bindings = <&kp BSPC &kp LS(T) &kp U &kp E &kp S &kp D &kp A &kp Y>;
         };
-        amen_secondly1: amen_secondly1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [2]Secondly
-            bindings = <&kp BSPC &kp LS(S) &kp E &kp C &kp O &kp N &kp D &kp L &kp Y>;
-        };
         amen_secondly: amen_secondly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4802,6 +4794,14 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // [2]secondly
             bindings = <&kp BSPC &kp S &kp E &kp C &kp O &kp N &kp D &kp L &kp Y>;
+        };
+        amen_secondly1: amen_secondly1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [2]Secondly
+            bindings = <&kp BSPC &kp LS(S) &kp E &kp C &kp O &kp N &kp D &kp L &kp Y>;
         };
         amen_wednesday: amen_wednesday {
             compatible = "zmk,behavior-macro";
@@ -4811,14 +4811,6 @@
             // [3]Wednesday
             bindings = <&kp BSPC &kp LS(W) &kp E &kp D &kp N &kp E &kp S &kp D &kp A &kp Y>;
         };
-        amen_thirdly1: amen_thirdly1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
-            tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [3]Thirdly
-            bindings = <&kp BSPC &kp LS(T) &kp H &kp I &kp R &kp D &kp L &kp Y>;
-        };
         amen_thirdly: amen_thirdly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -4827,13 +4819,13 @@
             // [3]thirdly
             bindings = <&kp BSPC &kp T &kp H &kp I &kp R &kp D &kp L &kp Y>;
         };
-        amen_zerothly1: amen_zerothly1 {
+        amen_thirdly1: amen_thirdly1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <U_ANTMORPH_MACRO_WAIT>;
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
-            // [0]Zerothly
-            bindings = <&kp BSPC &kp LS(Z) &kp E &kp R &kp O &kp T &kp H &kp L &kp Y>;
+            // [3]Thirdly
+            bindings = <&kp BSPC &kp LS(T) &kp H &kp I &kp R &kp D &kp L &kp Y>;
         };
         amen_zerothly: amen_zerothly {
             compatible = "zmk,behavior-macro";
@@ -4842,6 +4834,14 @@
             tap-ms = <U_ANTMORPH_MACRO_TAP>;
             // [0]zerothly
             bindings = <&kp BSPC &kp Z &kp E &kp R &kp O &kp T &kp H &kp L &kp Y>;
+        };
+        amen_zerothly1: amen_zerothly1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <U_ANTMORPH_MACRO_WAIT>;
+            tap-ms = <U_ANTMORPH_MACRO_TAP>;
+            // [0]Zerothly
+            bindings = <&kp BSPC &kp LS(Z) &kp E &kp R &kp O &kp T &kp H &kp L &kp Y>;
         };
         amen_count_me_out: amen_count_me_out {
             compatible = "zmk,behavior-macro";
