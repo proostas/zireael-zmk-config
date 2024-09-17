@@ -3,12 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 800  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20   // 10
-
-#include <dt-bindings/zmk/mouse.h>
-#include <behaviors/mouse_keys.dtsi>
-
 #define ENG 0   // English - Colemak-DH
 #define EPP 1   // English Cpp overlay
 #define ENN 2   // English navigation
@@ -56,7 +50,8 @@
 
 #define RIGHT_THUMB_KEYS \
                          39 40 41
-                         
+                     
+#include "mouse.dtsi"
 #include "antecedent_morph_cpp.dtsi"
 #include "antecedent_morph_english.dtsi"
 #include "diktor.dtsi"
@@ -70,19 +65,6 @@
     flavor = "balanced";
     tapping-term-ms = <U_TAPPING_TERM>;
     quick-tap-ms = <U_QUICK_TAP>; 
-};
-
-&mmv {
-    acceleration-exponent = <1>;  // 1
-    time-to-max-speed-ms = <300>; // 300
-    delay-ms = <0>;
-    trigger-period-ms = <8>;      // 16
-};
-&msc {
-    acceleration-exponent = <1>;  // 0
-    time-to-max-speed-ms = <40>;  // 300
-    delay-ms = <0>;
-    trigger-period-ms = <8>;      // 16
 };
 
 &caps_word {
@@ -229,62 +211,6 @@
                 bindings = <&kp N0>, <&kp AMPERSAND>;
                 mods = <(MOD_RSFT)>;
             };
-            
-            // Mouse 
-            //  acceleration
-            fmmv: fast_mouse_move {
-                compatible = "zmk,behavior-input-two-axis";
-                #binding-cells = <1>;
-                x-input-code = <INPUT_REL_X>;
-                y-input-code = <INPUT_REL_Y>;
-                acceleration-exponent = <1>;  // 1
-                time-to-max-speed-ms = <300>; // 300
-                delay-ms = <0>;
-                trigger-period-ms = <8>;      // 16
-            };
-            fmsc: fast_mouse_scroll {
-                compatible = "zmk,behavior-input-two-axis";
-                #binding-cells = <1>;
-                x-input-code = <INPUT_REL_HWHEEL>;
-                y-input-code = <INPUT_REL_WHEEL>;
-                acceleration-exponent = <1>;  // 0
-                time-to-max-speed-ms = <40>;  // 300
-                delay-ms = <0>;
-                trigger-period-ms = <8>;      // 16
-            };
-            //  deceleration
-            smmv: slow_mouse_move {
-                compatible = "zmk,behavior-input-two-axis";
-                #binding-cells = <1>;
-                x-input-code = <INPUT_REL_X>;
-                y-input-code = <INPUT_REL_Y>;
-                acceleration-exponent = <1>;  // 1
-                time-to-max-speed-ms = <300>; // 300
-                delay-ms = <0>;
-                trigger-period-ms = <8>;      // 16
-            };
-        };
-        
-        // Mouse 
-        //  acceleration
-        fmmv_input_listener: fmmv_input_listener {
-            compatible = "zmk,input-listener";
-            device = <&fmmv>;
-            scale-multiplier = <2>;
-            scale-divisor = <1>;
-        };
-        fmsc_input_listener: fmsc_input_listener {
-            compatible = "zmk,input-listener";
-            device = <&fmsc>;
-            scale-multiplier = <2>;
-            scale-divisor = <1>;
-        };
-        //  deceleration
-        smmv_input_listener: smmv_input_listener {
-            compatible = "zmk,input-listener";
-            device = <&smmv>;
-            scale-multiplier = <1>;
-            scale-divisor = <2>;
         };
 
         macros {
