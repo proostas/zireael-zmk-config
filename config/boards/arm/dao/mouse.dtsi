@@ -17,60 +17,28 @@
     trigger-period-ms = <8>;      // 16
 };
 
-/ {
-    behaviors {
-        //  acceleration
-        fmmv: fast_mouse_move {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            acceleration-exponent = <1>;  // 1
-            time-to-max-speed-ms = <300>; // 300
-            delay-ms = <0>;
-            trigger-period-ms = <8>;      // 16
-        };
-        fmsc: fast_mouse_scroll {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_HWHEEL>;
-            y-input-code = <INPUT_REL_WHEEL>;
-            acceleration-exponent = <1>;  // 0
-            time-to-max-speed-ms = <40>;  // 300
-            delay-ms = <0>;
-            trigger-period-ms = <8>;      // 16
-        };
-        //  deceleration
-        smmv: slow_mouse_move {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            acceleration-exponent = <1>;  // 1
-            time-to-max-speed-ms = <300>; // 300
-            delay-ms = <0>;
-            trigger-period-ms = <8>;      // 16
-        };
-    };
-    
-    //  acceleration
-    fmmv_input_listener: fmmv_input_listener {
-        compatible = "zmk,input-listener";
-        device = <&fmmv>;
-        scale-multiplier = <2>;
-        scale-divisor = <1>;
-    };
-    fmsc_input_listener: fmsc_input_listener {
-        compatible = "zmk,input-listener";
-        device = <&fmsc>;
-        scale-multiplier = <2>;
-        scale-divisor = <1>;
-    };
-    //  deceleration
-    smmv_input_listener: smmv_input_listener {
-        compatible = "zmk,input-listener";
-        device = <&smmv>;
-        scale-multiplier = <1>;
-        scale-divisor = <2>;
-    };
-};
+#define ZMK_MOUSE_FAST_MOVE_VAL 1600
+#define ZMK_MOUSE_FAST_SCRL_VAL 40
+#define ZMK_MOUSE_SLOW_MOVE_VAL 400
+#define ZMK_MOUSE_SLOW_SCRL_VAL 10
+
+#define MV_FUP MOVE_Y(-ZMK_MOUSE_FAST_MOVE_VAL)
+#define MV_FDOWN MOVE_Y(ZMK_MOUSE_FAST_MOVE_VAL)
+#define MV_FLEFT MOVE_X(-ZMK_MOUSE_FAST_MOVE_VAL)
+#define MV_FRIGHT MOVE_X(ZMK_MOUSE_FAST_MOVE_VAL)
+
+#define SC_FUP MOVE_Y(ZMK_MOUSE_FAST_SCRL_VAL)
+#define SC_FDOWN MOVE_Y(-ZMK_MOUSE_FAST_SCRL_VAL)
+#define SC_FLEFT MOVE_X(-ZMK_MOUSE_FAST_SCRL_VAL)
+#define SC_FRIGHT MOVE_X(ZMK_MOUSE_FAST_SCRL_VAL)
+
+#define MV_SUP MOVE_Y(-ZMK_MOUSE_SLOW_MOVE_VAL)
+#define MV_SDOWN MOVE_Y(ZMK_MOUSE_SLOW_MOVE_VAL)
+#define MV_SLEFT MOVE_X(-ZMK_MOUSE_SLOW_MOVE_VAL)
+#define MV_SRIGHT MOVE_X(ZMK_MOUSE_SLOW_MOVE_VAL)
+
+#define SC_SUP MOVE_Y(ZMK_MOUSE_SLOW_SCRL_VAL)
+#define SC_SDOWN MOVE_Y(-ZMK_MOUSE_SLOW_SCRL_VAL)
+#define SC_SLEFT MOVE_X(-ZMK_MOUSE_SLOW_SCRL_VAL)
+#define SC_SRIGHT MOVE_X(ZMK_MOUSE_SLOW_SCRL_VAL)
+
